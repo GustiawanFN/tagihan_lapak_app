@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lapak</string>
+
+    <!-- PETUNJUK SLIDER -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">OK</string>
+
+    <string name="slide_1_title">TEPAT WAKTU</string>
+    <string name="slide_1_desc">HEHEHEHEHE</string>
+
+    <string name="slide_2_title">DISIPLIN</string>
+    <string name="slide_2_desc">IYAIYAIYAIYA</string>
+
+    <string name="slide_3_title">KEMUDAHAN</string>
+    <string name="slide_3_desc">HIYAHIYAHIYAHIYA</string>
+</resources>
