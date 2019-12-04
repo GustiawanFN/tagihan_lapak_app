@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".HasilActivity"></activity>
+        <activity android:name=".TagihanDetailActivity"/>
+        <activity android:name=".HasilActivity" />
         <activity android:name=".LapakActivity" />
         <activity
             android:name=".PetunjukActivity"

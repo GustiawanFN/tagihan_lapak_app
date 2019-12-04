@@ -55,14 +55,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="15sp"
             android:text="2015081111"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Implementasi Algoritma Base64"
+            android:textAlignment="center"
+            android:text="Penerapan Algoritma Base64 Pada Aplikasi Pencatatan Iuran Lapak Pasar Tradisional Berbasis QR-Code"
             android:layout_gravity="center_horizontal"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>

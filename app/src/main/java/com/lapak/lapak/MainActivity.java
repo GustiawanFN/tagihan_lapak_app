@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     CardView btnScan, btnAbout, btnPetunjuk, btnTentang;
 
-    String message;
+    String message, kode_lapak, lokasi_lapak, harga_lapak, kode_pedagang, nama_pedagang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -163,10 +163,21 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, responseData.getMessage(), Toast.LENGTH_LONG).show();
 
                             message = responseData.getMessage();
+                            nama_pedagang = responseData.getNama_pedagang();
+                            kode_lapak = responseData.getKode_lapak();
+                            kode_pedagang = responseData.getKode_pedagang();
+                            harga_lapak = responseData.getHarga_lapak();
+                            lokasi_lapak = responseData.getLokasi_lapak();
+
 
                             //IntentExtra untuk membawa data ke halaman hasil scan
-                            Intent i = new Intent (MainActivity.this, HasilActivity.class);
+                            Intent i = new Intent (MainActivity.this, TagihanDetailActivity.class);
                             i.putExtra("message", message);
+                            i.putExtra("nama_pedagang", nama_pedagang);
+                            i.putExtra("kode_lapak", kode_lapak);
+                            i.putExtra("harga_lapak", harga_lapak);
+                            i.putExtra("kode_pedagang", kode_pedagang);
+                            i.putExtra("lokasi_lapak", lokasi_lapak);
 
 
                             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
