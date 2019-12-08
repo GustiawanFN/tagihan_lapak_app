@@ -14,8 +14,8 @@ public interface ApiService {
 
     @FormUrlEncoded
     @POST("bayar.php")
-    Call<ResponseData> bayar(@Field("kode_lapak")String kode_lapak,
-                             @Field("harga_lapak")String harga_lapak,
-                             @Field("kode_pedagang")String kode_pedagang
+    Call<ResponseData> bayar(@Field("kd_lapak")String kd_lapak,
+                             @Field("harga")String harga,
+                             @Field("kd_pedagang")String kd_pedagang
                              );
 }
