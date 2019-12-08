@@ -13,12 +13,9 @@ public interface ApiService {
     Call<ResponseData> bayarTagihan(@Field("kode")String qrcode);
 
     @FormUrlEncoded
-    @POST("tagihan.php")
-    Call<ResponseData> tagih(@Field("kode_lapak")String kode_lapak,
+    @POST("bayar.php")
+    Call<ResponseData> bayar(@Field("kode_lapak")String kode_lapak,
                              @Field("harga_lapak")String harga_lapak,
                              @Field("kode_pedagang")String kode_pedagang
                              );
-
-
-
 }

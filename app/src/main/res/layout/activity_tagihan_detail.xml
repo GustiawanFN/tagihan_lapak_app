@@ -1,81 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/bg_screen1"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
     tools:context=".TagihanDetailActivity">
 
-    <LinearLayout
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:id="@+id/linear"
-        android:orientation="vertical">
+
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
             android:src="@drawable/bill"
+            android:layout_gravity="center"
             android:paddingBottom="25dp"/>
 
-        <TextView
-            android:id="@+id/nama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Kode Pedagang" />
 
-        <TextView
-            android:id="@+id/kode_lapak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kode Lapak"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/lokasi_lapak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lokasi Lapak"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/kode_pedagang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kode Pedagang"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/harga_lapak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Harga Lapak"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold"
-            android:paddingBottom="35dp"/>
+    <TextView
+        android:id="@+id/kode_pedagang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="1234" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Nama Pedagang" />
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Wahyu" />
 
-        <Button
-            android:id="@+id/bayar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BAYAR"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:text="Kode Lapak" />
+
+    <TextView
+        android:id="@+id/kode_lapak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="B123" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Lokasi Lapak" />
+
+    <TextView
+        android:id="@+id/lokasi_lapak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Luragung" />
 
 
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Iuran" />
 
 
+    <TextView
+        android:id="@+id/harga_lapak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="12.000" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/bayar"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BAYAR" />
+
+
+</LinearLayout>
