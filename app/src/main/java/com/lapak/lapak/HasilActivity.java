@@ -1,5 +1,6 @@
 package com.lapak.lapak;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -23,6 +24,11 @@ public class HasilActivity extends AppCompatActivity {
 
         status.setText(v_stts);
 
+    }
+
+    public void onBackPressed() {
+
+        startActivity(new Intent(HasilActivity.this,MainActivity.class));
 
     }
 }

@@ -3,16 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="350dp"
-    android:layout_height="400dp"
+    android:layout_height="350dp"
     android:background="@color/colorPrimaryDark"
     app:cardElevation="5dp"
     android:padding="10dp"
     android:orientation="vertical"
     android:layout_gravity="center">
 
-
-
     <LinearLayout
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
         android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,13 +28,13 @@
         android:gravity="center"
         android:background="@drawable/circlebackground"/>
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:src="@drawable/wahyu"
-        app:civ_border_width="5dp"
-        app:civ_border_color="#83b9ff"/>
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/wahyu"-->
+<!--        app:civ_border_width="5dp"-->
+<!--        app:civ_border_color="#83b9ff"/>-->
 
 
 
@@ -47,23 +47,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wahyudin Rukmana"
+            android:text="Tentang Aplikasi"
             android:textStyle="bold"
             android:textSize="22sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:text="2015081111"
+            android:textAlignment="center"
+            android:text="Aplikasi ini dibuat sebagai media untuk proses pencatatan iuran lapak pasar yang dilakukan oleh petugas penagih iuran lapak pasar. Aplikasi ini berisi menu scan QR-Code untuk menscan QR-Code yang terdapat pada lapak pedagang, yang nantinya akan terkoneksi dengan website pasar untuk selanjutnya diproses menjadi sebuah laporan pencatatan."
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Penerapan Algoritma Base64 Pada Aplikasi Pencatatan Iuran Lapak Pasar Tradisional Berbasis QR-Code"
+            android:text="Diharapkan dengan adanya aplikasi ini dapat membantu proses kerja petugas penagih iuran lapak pasar dalam melakukan pencatatan iuran lapak pasar setiap harinya."
             android:layout_gravity="center_horizontal"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
